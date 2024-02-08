@@ -4,7 +4,6 @@ pipeline {
         stage('compile') {
 	   steps {
                 echo 'compiling..'
-		//this is to compile the code
 		git url: 'https://github.com/VannSann/EdhotiJavaProject.git'
 		sh script: 'mvn compile'
            }
